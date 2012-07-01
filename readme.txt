@@ -55,6 +55,10 @@ Yes, without a corresponding Submittable account, this plugin will not function 
 
 Please visit our website at Submittable (http://www.submittable.com) to learn all about how you can easily accept and review applications, editorial, contest entries, resumes, and other digitial content through your website.
 
+== Demo ==
+
+http://blog.submittable.com/submissions
+
 == Screenshots ==
 
 1. Integrate Your Submission Form Directly Into your WordPress Site
