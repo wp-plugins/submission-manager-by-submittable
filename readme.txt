@@ -1,5 +1,5 @@
 === Submittable ===
-Contributors: rpetersnmt
+Contributors: mfitzerald
 Tags: submittable, contests, submission manager, online applications, submission forms, publications, accept submissions, submit, curate, curation
 Requires at least: 3.0.0
 Tested up to: 3.4
