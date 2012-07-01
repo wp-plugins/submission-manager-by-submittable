@@ -1,5 +1,5 @@
 === Submittable ===
-Contributors: rpetersnmt
+Contributors: rpetersnmt, mfitzgerald
 Tags: submittable, contests, submission manager, online applications, submission forms, publications, accept submissions, submit, curate, curation
 Requires at least: 3.0.0
 Tested up to: 3.4
@@ -16,9 +16,10 @@ Submittable integrates with your website to provide a clean, organized system fo
 Submission Manager:
 
 *   Receive and manage all types of digital content: editorial,
-*   contest entries, business plans, portfolios, applications
-*   Earn revenue by accepting payment with submissions
+*   contest entries, applications, business plans, portfolios
+*   Earn revenue and increase quality by accepting payment with submissions
 *   Store files over time with no hosting costs
+*   Review your submissions on iPad, iPhone, and Kindle
 
 Submittable WordPress Plugin Notes:
 
