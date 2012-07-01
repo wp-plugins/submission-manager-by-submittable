@@ -35,11 +35,16 @@ Submittable WordPress Plugin Notes:
 Installing the Submittable WordPress Plugin is easy.
 
 1) Download the plugin: WordPress Plugin
+
 2) Log into your WordPress site Admin, and proceed to your "Plugins" menu item on the left.
+
 3) Click "Add New", then "Upload" and select the plugin zip from your hard drive.
+
 4) After the plugin installs, Activate it and then go to "Settings".
+
 5) Enter the sub domain of your Submittable URL. For example, if your URL is http://MyOrg.submittable.com, 
    the subdomain is "MyOrg". Then configure the others settings as needed.
+
 6) Create a new Page. Enter the Submittable shortcode into that page: [submittable] 
    Note: you can also add this code to any page that you'd like your work or job listings to show up.
 
@@ -58,7 +63,7 @@ Please visit our website at [Submittable] (http://www.submittable.com) to learn 
 == Screenshots ==
 
 1. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
-
+2.
 == Changelog ==
 
 = 1.0 =
