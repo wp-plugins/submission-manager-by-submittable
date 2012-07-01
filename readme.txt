@@ -60,6 +60,11 @@ Please visit our website at Submittable (http://www.submittable.com) to learn al
 1. Integrate Your Submission Form Directly Into your WordPress Site
 2. Sort, Filter, Share, Vote on, Comment on, and Review your Submissions all from a centralized dashboard
 3. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
+
+== Support ==
+Our support forum: http://help.submittable.com
+Email: support@submittable.com
+Phone: (855) 467-8264 x 2
 == Changelog ==
 
 = 1.0 =
