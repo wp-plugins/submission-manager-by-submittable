@@ -58,12 +58,12 @@ Yes, without a corresponding Submittable account, this plugin will not function 
 
 = What is Submittable? =
 
-Please visit our website at [Submittable] (http://www.submittable.com) to learn all about the services we offer.
+Please visit our website at Submittable (http://www.submittable.com) to learn all about how you can easily accept and review applications, editorial, contest entries, resumes, and other digitial content through your website.
 
 == Screenshots ==
 
-1. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
-2.
+1. Integrate Your Submission Form Directly Into your WordPress Site
+2. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
 == Changelog ==
 
 = 1.0 =
