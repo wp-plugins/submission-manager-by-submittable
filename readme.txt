@@ -74,6 +74,9 @@ Phone: (855) 467-8264 x 2
 
 == Changelog ==
 
+= 1.0.2 =
+* Buggy version number fix
+
 = 1.0.1 =
 * [Fixed] Misc. formatting fixes for WordPress.org Plugin Description Page
 * [Fixed] Plugins menu settings URL error fix
