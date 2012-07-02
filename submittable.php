@@ -4,7 +4,7 @@ Plugin Name: Submittable
 Plugin URI: http://www.submittable.com/wordpress
 Description: Plugin for integrating Submittable&trade; data into your WordPress powered website.
 Author: R.Peterson
-Version: 1.0.3
+Version: 1.0.5
 */
 
 // ------------------------------------------------------------------------
@@ -319,6 +319,7 @@ function submittable_get_content($atts) {
 
 		// Get a SimplePie feed object from the specified feed source.
 		$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
+    $submittable_rss->enable_order_by_date(false);
 
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 

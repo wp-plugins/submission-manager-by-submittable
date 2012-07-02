@@ -3,7 +3,7 @@ Contributors: rpetersnmt, mfitzgerald
 Tags: submittable, contests, submission manager, online applications, submission forms, publications, accept submissions, submit, curate, curation
 Requires at least: 3.0.0
 Tested up to: 3.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,9 @@ Email: support@submittable.com
 Phone: (855) 467-8264 x 2
 
 == Changelog ==
+
+= 1.0.5 =
+* [Fixed] Removed Date in the Order
 
 = 1.0.3 =
 * [Fixed] Categories array was being reversed
