@@ -319,7 +319,7 @@ function submittable_get_content($atts) {
 
 		// Get a SimplePie feed object from the specified feed source.
 		$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
-    $submittable_rss->enable_order_by_date(false);
+                $submittable_rss->enable_order_by_date(false);
 
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 
@@ -348,8 +348,9 @@ function submittable_get_content($atts) {
 			// Figure out how many total items there are.
 			$maxitems = $submittable_rss->get_item_quantity(0); // setting get_item_quantity to "0" returns all items
 
-
-
+			// Build an array of all the items, starting with element 0 (first element).
+			//$rss_items = array_reverse($submittable_rss->get_items(0, $maxitems));
+			$rss_items = $submittable_rss->get_items(0, $maxitems);
 
 		} // end is_wp_error check
 
