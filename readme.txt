@@ -25,7 +25,7 @@ Submittable WordPress Plugin Notes:
 
 *   Only loads CSS files for pages where the [submittable] shortcode is found (NO BLOAT!)
 *   Translation-ready!
-*   Your pages can be un-branded (no reference to Submittable
+*   Your pages can be un-branded (no reference to Submittable)
 *   Default CSS can be disabled, allowing you to fully customize your results look/feel
 *   Choose whether or not you want to show your submission fees (if they exist).
 *   Choose whether or not you want to show your accepted document types (DOC, PDF, MOV, MP3, etc.)
@@ -61,15 +61,22 @@ http://blog.submittable.com/submissions
 
 == Screenshots ==
 
-1. Integrate Your Submission Form Directly Into your WordPress Site
-2. Sort, Filter, Share, Vote on, Comment on, and Review your Submissions all from a centralized dashboard
-3. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
+1. Submittable Plugin Options
+2. Integrate Your Submission Form Directly Into your WordPress Site
+3. Sort, Filter, Share, Vote on, Comment on, and Review your Submissions all from a centralized dashboard
+4. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
 
 == Support ==
 Our support forum: http://help.submittable.com
 Email: support@submittable.com
 Phone: (855) 467-8264 x 2
+
 == Changelog ==
+
+= 1.0.1 =
+* [Fixed] Misc. formatting fixes for WordPress.org Plugin Page
+* [Fixed] Plugins menu settings URL error fix
+* [Added] WordPress.org Plugin Banner
 
 = 1.0 =
 * First Release (6/18/2012)

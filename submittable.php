@@ -278,7 +278,7 @@ function submittable_validate_options($input) {
 function submittable_plugin_action_links( $links, $file ) {
 
 	if ( $file == plugin_basename( __FILE__ ) ) {
-		$submittable_links = '<a href="'.get_admin_url().'options-general.php?page=submittable/submittable.php">'.__('Settings').'</a>';
+		$submittable_links = '<a href="'.get_admin_url().'options-general.php?page=submission-manager-by-submittable/submittable.php">'.__('Settings').'</a>';
 		// make the 'Settings' link appear first
 		array_unshift( $links, $submittable_links );
 	}
