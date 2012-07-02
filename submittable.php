@@ -4,7 +4,7 @@ Plugin Name: Submittable
 Plugin URI: http://www.submittable.com/wordpress
 Description: Plugin for integrating Submittable&trade; data into your WordPress powered website.
 Author: R.Peterson
-Version: 1.0
+Version: 1.0.2
 */
 
 // ------------------------------------------------------------------------
