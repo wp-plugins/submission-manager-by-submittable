@@ -1,0 +1,33 @@
+/* Submittable Plugin Admin CSS */
+
+div#submittable_social a {
+display: block;
+float:left;
+margin: 0 8px 0 0;
+}
+
+div#submittable_admin_icon {
+background: url('../images/submittable_admin_icon.png') no-repeat 0 0;	
+}
+
+div.submittable-spacer {
+border-bottom:#dddddd 1px solid;
+}
+
+span.submittable-input-span {
+color:#888888;
+font-style:italic;
+display:block;	
+}
+
+label.submittable-relative-css {
+position: relative;	
+display: block;
+}
+
+label.submittable-relative-css span {
+	display:block;
+	position:absolute;
+	left: 150px;
+	top: 0;
+}
