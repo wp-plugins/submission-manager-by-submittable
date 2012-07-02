@@ -75,9 +75,8 @@ Phone: (855) 467-8264 x 2
 == Changelog ==
 
 = 1.0.1 =
-* [Fixed] Misc. formatting fixes for WordPress.org Plugin Page
+* [Fixed] Misc. formatting fixes for WordPress.org Plugin Description Page
 * [Fixed] Plugins menu settings URL error fix
-* [Added] WordPress.org Plugin Banner
 
 = 1.0 =
 * First Release (6/18/2012)
