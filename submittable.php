@@ -4,7 +4,7 @@ Plugin Name: Submittable
 Plugin URI: http://www.submittable.com/wordpress
 Description: Plugin for integrating Submittable&trade; data into your WordPress powered website.
 Author: R.Peterson
-Version: 1.0.2
+Version: 1.0.4
 */
 
 // ------------------------------------------------------------------------
@@ -348,7 +348,8 @@ function submittable_get_content($atts) {
 			$maxitems = $submittable_rss->get_item_quantity(0); // setting get_item_quantity to "0" returns all items
 
 			// Build an array of all the items, starting with element 0 (first element).
-			$rss_items = array_reverse($submittable_rss->get_items(0, $maxitems));
+			//$rss_items = array_reverse($submittable_rss->get_items(0, $maxitems));
+			$rss_items = $submittable_rss->get_items(0, $maxitems);
 
 		} // end is_wp_error check
 
