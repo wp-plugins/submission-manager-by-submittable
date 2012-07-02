@@ -67,6 +67,7 @@ http://blog.submittable.com/submissions
 4. Submittable is a cloud-based Submisssions Management platform for accepting applications, editorial submissions, contest entries and other digital content such as films, audio, and images. 
 
 == Support ==
+
 Our support forum: http://help.submittable.com
 Email: support@submittable.com
 Phone: (855) 467-8264 x 2
@@ -81,3 +82,7 @@ Phone: (855) 467-8264 x 2
 = 1.0 =
 * First Release (6/18/2012)
 
+== Upgrade Notice ==
+
+= 1.0.1 =
+Minor Updates, fixing version number
