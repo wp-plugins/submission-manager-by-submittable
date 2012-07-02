@@ -74,6 +74,9 @@ Phone: (855) 467-8264 x 2
 
 == Changelog ==
 
+= 1.0.3 =
+* [Fixed] Categories array was being reversed
+
 = 1.0.1 =
 * [Fixed] Misc. formatting fixes for WordPress.org Plugin Page
 * [Fixed] Plugins menu settings URL error fix
@@ -83,6 +86,9 @@ Phone: (855) 467-8264 x 2
 * First Release (6/18/2012)
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+* [Fixed] Categories were being reversed
 
 = 1.0.1 =
 Minor Updates, fixing version number
