@@ -1,6 +1,6 @@
 === Submittable ===
 Contributors: rpetersnmt, mfitzgerald
-Tags: submittable, contests, submission manager, online applications, submission forms, publications, accept submissions, submit, curate, curation
+Tags: submissions manager, submittable, guest blog posts, contest manager, submission manager, online applications, submission forms, accept submissions, curation manager 
 Requires at least: 3.0.0
 Tested up to: 3.4
 Stable tag: 1.0.5
