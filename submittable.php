@@ -319,7 +319,8 @@ function submittable_get_content($atts) {
 
 		// Get a SimplePie feed object from the specified feed source.
 		$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
-                $submittable_rss->enable_order_by_date(false);
+		 $submittable_rss->set_cache_duration(60);
+         $submittable_rss->enable_order_by_date(false);
 
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 
@@ -385,16 +386,10 @@ function submittable_get_content($atts) {
 				$submittable_content .= $item->get_content();
 				$submittable_content .= '</div>';
 
-				// check on the fees
-				$submittable_fee = $item->get_item_tags('', 'fee');
-				$submittable_amount = $submittable_fee[0]['data'];
-
-				if ($submittable_amount != "$0.00" && $submittable_options['show_fees'] == "yes") {
-					$submittable_content .= '<div class="submittable-types">';
-					//$submittable_content .= '<b>__('Submission Fee:', 'submittable')</b>&nbsp;';
-					$submittable_content .= $submittable_amount;
-					$submittable_content .= '</div>';
-				}
+				$submittable_content .= '<div class="submittable-types">';
+				//$submittable_content .= '<b>__('Submission Fee:', 'submittable')</b>&nbsp;';
+				$submittable_content .= $submittable_amount;
+				$submittable_content .= '</div>';
 
 				// check on the submission types
 				$submittable_docs = $item->get_item_tags('', 'acceptableTypes');
