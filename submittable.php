@@ -4,7 +4,7 @@ Plugin Name: Submittable
 Plugin URI: http://www.submittable.com/wordpress
 Description: Plugin for integrating Submittable&trade; data into your WordPress powered website.
 Author: R.Peterson
-Version: 1.0.5
+Version: 1.0.6
 */
 
 // ------------------------------------------------------------------------
@@ -148,9 +148,9 @@ function submittable_render_form() {
 
 				<!-- Subdomain -->
 				<tr >
-					<th scope="row"><?php _e('Submittable&trade; Sub Domain', 'submittable'); ?><br /><i>(ex: http://xxxxxxxx.submittable.com)</i></th>
+					<th scope="row"><?php _e('Submittable&trade; Sub Domain', 'submittable'); ?><br /><i>(ex: http://YOURORGNAME.submittable.com)</i></th>
 					<td>
-						<input type="text" size="20" name="submittable_options[subdomain]" value="<?php echo $options['subdomain']; ?>" />
+						<input type="text" size="20" name="submittable_options[subdomain]" value="<?php echo $options['subdomain']; ?>" /><span class="submittable-input-span"><?php _e('Only add the SUBDOMAIN, not the full domain. So just the first part of your URL(i.e. YOURORGNAME).', 'submittable'); ?></span>
 					</td>
 				</tr>
 
@@ -319,8 +319,8 @@ function submittable_get_content($atts) {
 
 		// Get a SimplePie feed object from the specified feed source.
 		$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
-		 $submittable_rss->set_cache_duration(60);
-         $submittable_rss->enable_order_by_date(false);
+               $submittable_rss->set_cache_duration(60);
+              $submittable_rss->enable_order_by_date(false);
 
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 
@@ -386,10 +386,16 @@ function submittable_get_content($atts) {
 				$submittable_content .= $item->get_content();
 				$submittable_content .= '</div>';
 
-				$submittable_content .= '<div class="submittable-types">';
-				//$submittable_content .= '<b>__('Submission Fee:', 'submittable')</b>&nbsp;';
-				$submittable_content .= $submittable_amount;
-				$submittable_content .= '</div>';
+				// check on the fees
+				$submittable_fee = $item->get_item_tags('', 'fee');
+				$submittable_amount = $submittable_fee[0]['data'];
+
+				if ($submittable_amount != "$0.00" && $submittable_options['show_fees'] == "yes") {
+					$submittable_content .= '<div class="submittable-types">';
+					//$submittable_content .= '<b>__('Submission Fee:', 'submittable')</b>&nbsp;';
+					$submittable_content .= $submittable_amount;
+					$submittable_content .= '</div>';
+				}
 
 				// check on the submission types
 				$submittable_docs = $item->get_item_tags('', 'acceptableTypes');

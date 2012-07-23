@@ -73,6 +73,8 @@ Email: support@submittable.com
 Phone: (855) 467-8264 x 2
 
 == Changelog ==
+= 1.0.6 =
+* [Fixed] Lowered Caching to 60 seconds so uses could see changes sooner
 
 = 1.0.5 =
 * [Fixed] Removed Date in the Order
