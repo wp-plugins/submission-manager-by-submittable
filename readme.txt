@@ -41,7 +41,7 @@ Installing the Submittable WordPress Plugin is easy.
 5. Enter the sub domain of your Submittable URL. For example, if your URL is http://MyOrg.submittable.com, 
    the subdomain is "MyOrg". Then configure the other settings as needed.
 6. Create a new Page. Enter the Submittable shortcode into that page: [submittable] 
-   Note: you can also add this code to any page that you'd like your work or job listings to show up.
+   Note: You can now add the code [submittable] to any Word Press page where you would like your submission categories (or job listings) display.
 
 Links to your Submittable submission forms are now listed directly on the Page/Post of your choice.
 
