@@ -316,11 +316,21 @@ function submittable_get_content($atts) {
 		// Get RSS Feed(s)
 		include_once(ABSPATH . WPINC . '/feed.php');
 
+		// Cache Filter Duration
+		function return_30( $seconds )
+			{
+			  // change the default feed cache recreation period to 1 hour
+			  return 30;
+			}
 
 		// Get a SimplePie feed object from the specified feed source.
-		$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
-               $submittable_rss->set_cache_duration(60);
-              $submittable_rss->enable_order_by_date(false);
+
+		add_filter( 'wp_feed_cache_transient_lifetime' , 'return_30' );
+			$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
+		remove_filter( 'wp_feed_cache_transient_lifetime' , 'return_30' );
+
+        //$submittable_rss->set_cache_duration(60);
+        $submittable_rss->enable_order_by_date(false);
 
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 
