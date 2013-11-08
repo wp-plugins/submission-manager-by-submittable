@@ -3,7 +3,7 @@ Contributors: rpetersnmt, mfitzgerald
 Tags: submissions manager, submittable, guest blog posts, contest manager, submission manager, online applications, submission forms, accept submissions, curation manager 
 Requires at least: 3.0.0
 Tested up to: 3.5
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,9 @@ Email: support@submittable.com
 Phone: (855) 467-8264 x 2
 
 == Changelog ==
+= 1.0.8 =
+* [Fixed] Better messaging when RSS could feed not be loaded
+
 = 1.0.7 =
 * [Fixed] Changed caching method
 
