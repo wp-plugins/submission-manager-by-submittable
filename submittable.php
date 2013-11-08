@@ -254,9 +254,7 @@ function submittable_render_form() {
 
 		<div id="submittable_social">
 
-			<a href="http://www.submittable.com" id="submittable_footer_logo" title="<?php _e('Powered By Submittable', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/submittable-powered.png" /></a>
-			<a href="http://www.facebook.com/Submishmash" title="<?php _e('Submittable Facebook Page', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/facebook-icon.png" /></a>
-			<a href="http://www.twitter.com/submittable" title="<?php _e('Submittable on Twitter', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/twitter-icon.png" /></a>
+			<a href="http://www.submittable.com" id="submittable_footer_logo" title="<?php _e('Powered By Submittable', 'submittable'); ?>" target="_blank"><img src="https://mnager.submittable.com/Public/Images/submittable-footer-logo.png" /></a>
 
 		</div>
 
