@@ -330,8 +330,6 @@ function submittable_get_content($atts) {
 		remove_filter( 'wp_feed_cache_transient_lifetime' , 'return_30' );
 
         //$submittable_rss->set_cache_duration(60);
-        $submittable_rss->enable_order_by_date(false);
-
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
 
 			//force enqueue styles if there's an error
@@ -340,7 +338,7 @@ function submittable_get_content($atts) {
 			$error_no_rss .= __('Oops! There is an error getting the Information from Submittable&trade;.', 'submittable');
 			if (current_user_can('manage_options')) {
 				$error_no_rss .= '<br />'.__('Admin: Please double check that your entered "<a href="/wp-admin/options-general.php?page=submittable/submittable.php">subdomain</a>" is valid.', 'submittable');
-				$error_no_rss .= '<br />'.sprintf(__('Oh, for reference, you entered: <i>%s</i> for the subdomain.', 'submittable'), $submittable_options['subdomain']);
+				$error_no_rss .= '<br />'.sprintf(__('You entered: <i>%s</i> for the subdomain.', 'submittable'), $submittable_options['subdomain']);
 			}
 			$error_no_rss .= '</p><span>';
 			$error_no_rss .= '</span></div></div>';
@@ -348,6 +346,7 @@ function submittable_get_content($atts) {
 			exit;
 
 		} else { // no RSS Error, carrying on
+			$submittable_rss->enable_order_by_date(false);
 
 			if ($submittable_options['button_label'] != '') { // reset the button label, if overriding text has been added
 				$button_label = $submittable_options['button_label']."&nbsp;&raquo;";
