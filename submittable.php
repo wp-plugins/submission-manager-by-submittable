@@ -254,9 +254,7 @@ function submittable_render_form() {
 
 		<div id="submittable_social">
 
-			<a href="http://www.submittable.com" id="submittable_footer_logo" title="<?php _e('Powered By Submittable', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/submittable-powered.png" /></a>
-			<a href="http://www.facebook.com/Submishmash" title="<?php _e('Submittable Facebook Page', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/facebook-icon.png" /></a>
-			<a href="http://www.twitter.com/submittable" title="<?php _e('Submittable on Twitter', 'submittable'); ?>" target="_blank"><img src="<?php echo plugins_url(); ?>/submittable/images/twitter-icon.png" /></a>
+			<a href="http://www.submittable.com" id="submittable_footer_logo" title="<?php _e('Powered By Submittable', 'submittable'); ?>" target="_blank"><img src="https://mnager.submittable.com/Public/Images/submittable-footer-logo.png" /></a>
 
 		</div>
 
@@ -303,7 +301,7 @@ function submittable_get_content($atts) {
 		$error_no_sub = '<div id="submittable_content"><div class="alert">';
 		$error_no_sub .= __('Oops! Looks like there\'s some setup info needed with the Submittable Plugin.', 'submittable');
 		if (current_user_can('manage_options')) {
-			$error_no_sub .= '<br />'.__('Admin: The "subdomain" value is missing in the <a href="/wp-admin/options-general.php?page=submittable/submittable.php">Plugin Settings!', 'submittable');
+			$error_no_sub .= '<br />'.__('Admin: The "subdomain" value is missing in the <a href="/wp-admin/options-general.php?page=submission-manager-by-submittable/submittable.php">Plugin Settings!', 'submittable');
 		}
 		$error_no_sub .= '</a></div></div>';
 		 return $error_no_sub;
