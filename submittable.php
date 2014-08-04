@@ -301,7 +301,7 @@ function submittable_get_content($atts) {
 		$error_no_sub = '<div id="submittable_content"><div class="alert">';
 		$error_no_sub .= __('Oops! Looks like there\'s some setup info needed with the Submittable Plugin.', 'submittable');
 		if (current_user_can('manage_options')) {
-			$error_no_sub .= '<br />'.__('Admin: The "subdomain" value is missing in the <a href="/wp-admin/options-general.php?page=submission-manager-by-submittable/submittable.php">Plugin Settings!', 'submittable');
+			$error_no_sub .= '<br />'.__('Admin: The "subdomain" value is missing in the <a href="/wp-admin/options-general.php?page=submittable/submittable.php">Plugin Settings!', 'submittable');
 		}
 		$error_no_sub .= '</a></div></div>';
 		 return $error_no_sub;
@@ -324,12 +324,21 @@ function submittable_get_content($atts) {
 		// Get a SimplePie feed object from the specified feed source.
 
 		add_filter( 'wp_feed_cache_transient_lifetime' , 'return_30' );
-			$submittable_rss = fetch_feed('http://'.$submittable_options['subdomain'].'.submittable.com/rss/');
+		
+		$subdomain = $submittable_options['subdomain'];
+		$numDots = substr_count( $submittable_options['subdomain'], '.');
+		if( $numDots == 0 )
+			$subdomain = $subdomain . '.submittable.com';
+		
+		$rss_url = 'http://'.$subdomain.'/rss/';
+		
+		$submittable_rss = fetch_feed($rss_url);
+		
 		remove_filter( 'wp_feed_cache_transient_lifetime' , 'return_30' );
 
         //$submittable_rss->set_cache_duration(60);
 		if (is_wp_error( $submittable_rss ) ) { // If there's an error getting the RSS feed
-
+			$error_string = $submittable_rss->get_error_message();
 			//force enqueue styles if there's an error
 			wp_enqueue_style('submittable-default-css', plugin_dir_url(__FILE__).'css/submittable-default.css');
 			$error_no_rss = '<div id="submittable_content"><div class="alert"><p>';
